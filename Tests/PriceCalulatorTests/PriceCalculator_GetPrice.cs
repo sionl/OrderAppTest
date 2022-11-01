@@ -4,9 +4,9 @@ using Domain.Models;
 namespace Tests.PriceCalulatorTests
 {
     [TestClass]
-    public class PriceCalulator_GetPrice
+    public class PriceCalculator_GetPrice
     {
-        private PriceCalulator priceCalulator = new PriceCalulator();
+        private PriceCalculator priceCalulator = new PriceCalculator();
 
         [TestMethod]
         public void WhenNoBookes_Expect0()
@@ -45,18 +45,15 @@ namespace Tests.PriceCalulatorTests
         {
             var order = new Order() { First = 1, Second = 1 };
             var actual = priceCalulator.GetPrice(order);
-            decimal expect = decimal.Parse("15.2");
-            Assert.AreEqual(expect, actual);
+            Assert.AreEqual(15.2m, actual);
         }
-
 
         [TestMethod]
         public void When2SetOf3And1Set2_Expect36and8()
         {
             var order = new Order() { First = 2, Second = 1, Third = 2 };
             var actual = priceCalulator.GetPrice(order);
-            decimal expect = decimal.Parse("36.8");
-            Assert.AreEqual(expect, actual);
+            Assert.AreEqual(36.8m, actual);
         }
 
         [TestMethod]

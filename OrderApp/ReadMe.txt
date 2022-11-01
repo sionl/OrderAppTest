@@ -21,13 +21,11 @@ For example, how much does this basket of books cost?
 2 copies of first book
 1 copy of second book
 
-answer:
-(2 * 8) – 5% [First book, second book] + (8) [First book] = 23.2
+answer: (2 * 8) – 5% [First book, second book] + (8) [First book] = 23.2
 
 Or in another scenario if you had:
 • 2 copies of the first book
 • 1 copies of the second book
 • 2 copies of the third book
 
-answer:
-(3 * 8) - 10% [first book, second book, third book] + (2 * 8) - 5% [first book, third book] = 36.8
+answer: (3 * 8) - 10% [first book, second book, third book] + (2 * 8) - 5% [first book, third book] = 36.8

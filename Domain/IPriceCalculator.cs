@@ -2,7 +2,7 @@
 
 namespace Domain
 {
-    public interface IPriceCalulator
+    public interface IPriceCalculator
     {
         decimal GetPrice(Order order);
     }
